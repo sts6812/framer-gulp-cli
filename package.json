@@ -1,0 +1,36 @@
+{
+  "name": "framer-bootstrap",
+  "version": "1.1.2",
+  "description": "Bootstrap your Framer.js prototype development.",
+  "keywords": [
+    "prototype",
+    "framer",
+    "framerjs"
+  ],
+  "homepage": "https://github.com/alexchantastic/framer-bootstrap",
+  "bugs": {
+    "url": "https://github.com/alexchantastic/framer-bootstrap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexchantastic/framer-bootstrap.git"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "coffee-loader": "^0.7.3",
+    "coffee-script": "^1.12.7",
+    "gulp": "^3.9.1",
+    "webpack": "^3.4.1",
+    "webpack-stream": "^3.2.0"
+  },
+  "author": "Alex Chan",
+  "license": "MIT",
+  "dependencies": {
+    "framerjs": "git+ssh://git@github.com:koenbok/Framer.git",
+    "gulp-cli": "^2.0.1"
+  },
+  "scripts": {
+    "install": "npm --prefix ./node_modules/framerjs/ install && make dist -C ./node_modules/framerjs/ && cp ./node_modules/framerjs/build/framer.js ./framer/"
+  }
+}

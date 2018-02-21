@@ -1,0 +1,793 @@
+<html lang='en'><head><meta charset='utf-8'><title>template</title> <script src='https://code.jquery.com/jquery-1.7.1.min.js'integrity='sha256-iBcUE/x23aI6syuqF7EeT/+JFBxjPs5zeFJEXxumwb0='crossorigin='anonymous'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44='crossorigin='anonymous' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' crossorigin='anonymous'></script> <script src='https://cdn.rawgit.com/beautify-web/js-beautify/master/js/lib/beautify-css.js'></script> <script src='https://cdn.rawgit.com/beautify-web/js-beautify/master/js/lib/beautify-html.js'></script><script>xmlObj='<actiondescriptor><version>1.5.0</version><timestamp>1518963166.915</timestamp><count>202</count><layers><id>5</id><index>2</index><type>layer</type><name>computer-767781_1920</name><bounds><top>497</top><left>647</left><bottom>711</bottom><right>1059</right></bounds><visible>true</visible><clipped>false</clipped><generatorsettings>false</generatorsettings><smartobject><id>89f34ede-14b5-11e8-8e10-f302c4445830</id><placed>89f34ee0-14b5-11e8-8e10-f302c4445830</placed><crop>1</crop><antialiastype>16</antialiastype><type>2</type><transform>647</transform><transform>497</transform><transform>1059</transform><transform>497</transform><transform>1059</transform><transform>711</transform><transform>647</transform><transform>711</transform><comp>-1</comp><compinfo><compid>-1</compid><originalcompid>-1</originalcompid></compinfo></smartobject><svgplaceholder></svgplaceholder></layers><layers><id>4</id><index>1</index><type>shapeLayer</type><name>Rectangle 1</name><bounds><top>419</top><left>309</left><bottom>630</bottom><right>579</right></bounds><visible>true</visible><clipped>false</clipped><fill><color><red>101</red><green>10.6926</green><blue>10.6926</blue></color><class>solidColorLayer</class></fill><generatorsettings>false</generatorsettings><path><pathcomponents><origin><type>rect</type><bounds><top>419</top><left>309</left><bottom>630</bottom><right>579</right></bounds></origin></pathcomponents><bounds><top>419</top><left>309</left><bottom>630</bottom><right>579</right></bounds><defaultfill>false</defaultfill></path><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270px" height="211px"><path fill-rule="evenodd" fill="rgb(101, 11, 11)" d="M-0.000,-0.000 L270.000,-0.000 L270.000,211.000 L-0.000,211.000 L-0.000,-0.000 Z"></path></svg><caps></caps><underline></underline><tracking></tracking><italic></italic><bold></bold></layers><layers><id>3</id><index>0</index><type>textLayer</type><name>this is just a test onl a test</name><bounds><top>316</top><left>309</left><bottom>420</bottom><right>868</right></bounds><visible>true</visible><clipped>false</clipped><generatorsettings>false</generatorsettings><text><textkey>this is just a testonl a test</textkey><textclickpoint><horizontal><value>49.4123</value><units>percentUnit</units></horizontal><vertical><value>40.006</value><units>percentUnit</units></vertical></textclickpoint><boundingbox><left>-279.016</left><top>-41</top><right>278.616</right><bottom>62.7</bottom></boundingbox><bounds><left>-280.016</left><top>-50.1297</top><right>278.876</right><bottom>73.0397</bottom></bounds><textshape><char>paint</char><orientation>horizontal</orientation><transform><xx>1</xx><xy>0</xy><yx>0</yx><yy>1</yy><tx>0</tx><ty>0</ty></transform><rowcount>1</rowcount><columncount>1</columncount><rowmajororder>true</rowmajororder><rowgutter>0</rowgutter><columngutter>0</columngutter><spacing>0</spacing><framebaselinealignment>alignByAscent</framebaselinealignment><firstbaselineminimum>0</firstbaselineminimum><base></base><horizontal>0</horizontal><vertical>0</vertical></textshape><textstylerange><from>0</from><to>31</to><textstyle><fontname>AR DELANEY</fontname><fontstylename>Regular</fontstylename><size>60</size><color><red>101</red><green>10.6921</green><blue>10.6921</blue></color><tracking>-20</tracking><leading>61.7</leading></textstyle></textstylerange><textstylerange><from>0</from><to>31</to><textstyle><fontname>AR DELANEY</fontname><fontstylename>Regular</fontstylename><size>60</size><color><red>101</red><green>10.6921</green><blue>10.6921</blue></color><tracking>-20</tracking><leading>61.7</leading></textstyle></textstylerange><paragraphstylerange><from>0</from><to>20</to><paragraphstyle><align>center</align></paragraphstyle></paragraphstylerange><paragraphstylerange><from>20</from><to>31</to><paragraphstyle><align>center</align></paragraphstyle></paragraphstylerange></text><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="559px" height="104px"><text font-family="AR DELANEY" fill="rgb(101, 11, 11)" font-size="60px" x="0px" y="104px"><tspan dy="-62.7px">THIS IS JUST A TEST</tspan><tspan x="0px" dy="1.028em">ONL A TEST</tspan></text></svg><caps>text-transform: capitalize;</caps><underline></underline><tracking>-20</tracking><italic></italic><bold></bold></layers></actiondescriptor>'</script><script>function xml2html(xmlObj) {
+    // Load the xml file using ajax
+    //console.log(xmlObj)
+    embedStyles = ''
+    textAnchor = ''
+    embedStyles2 = ''
+    css = '';
+    margintop = 0;
+    x = 0;
+    mainbody = '';
+    width = '';
+    height = '';
+    y = 0
+    marginTop = ''
+    span = ''
+    textcolor = ''
+filter=''
+    $.extend($.expr[":"], {
+        containsExact: $.expr.createPseudo ?
+            $.expr.createPseudo(function (text) {
+                return function (elem) {
+                    return $.trim(elem.innerHTML.toLowerCase()) === text.toLowerCase();
+                };
+            }) :
+            // support: jQuery <1.8
+            function (elem, i, match) {
+                return $.trim(elem.innerHTML.toLowerCase()) === match[3].toLowerCase();
+            },
+
+        containsExactCase: $.expr.createPseudo ?
+            $.expr.createPseudo(function (text) {
+                return function (elem) {
+                    return $.trim(elem.innerHTML) === text;
+                };
+            }) :
+            // support: jQuery <1.8
+            function (elem, i, match) {
+                return $.trim(elem.innerHTML) === match[3];
+            },
+
+        containsRegex: $.expr.createPseudo ?
+            $.expr.createPseudo(function (text) {
+                var reg = /^\/((?:\\\/|[^\/])+)\/([mig]{0,3})$/.exec(text);
+                return function (elem) {
+                    return reg ? RegExp(reg[1], reg[2]).test($.trim(elem.innerHTML)) : false;
+                };
+            }) :
+            // support: jQuery <1.8
+            function (elem, i, match) {
+                var reg = /^\/((?:\\\/|[^\/])+)\/([mig]{0,3})$/.exec(match[3]);
+                return reg ? RegExp(reg[1], reg[2]).test($.trim(elem.innerHTML)) : false;
+            }
+
+    });
+
+    obj = {
+        'lyr': "type:containsExact('layer')",
+        'lyrSection': "type:containsExact('layerSection')",
+        'text': "type:containsExact('textLayer')",
+        'shapeLyr': "type:containsExact('shapeLayer')",
+        'adjustmentLyer': "type:containsExact('adjustmentLayer')",
+        'clipLyrBtm': "clippedLayer:containsExact('bottomClippingLayer')",
+        'clipLyrTop': "clippedLayer:containsExact('topClippingLayer')",
+        'clipLyrMiddle': "clippedLayer:containsExact('middleClippingLayer')",
+        'clipLyrFalse': "clippedLayer:containsExact('false')",
+        'italicFontStyleName': "fontStyleName:containsExact('Italic')",
+    }
+
+    // Parse the xml file and get data
+    xml = xmlObj.replace(/\x03/g, '')
+    var xmlobj1 = $.parseXML(xml)
+    var xmlDoc = $.parseXML(xml),
+        $xml = $(xml).find('textshape>base').remove();
+    var folderPath = $($(xml).find('file')).text().replace(/\./g, '');
+    if (folderPath.lastIndexOf("\\") > -1) {
+
+        var fileName = folderPath.substr(folderPath.lastIndexOf("\\"), folderPath.length);
+
+        var fileName = fileName.replace(/\\/g, '')
+        var fileName = fileName.replace(/\./g, '')
+
+        //var folderPath = folderPath.substr(0, folderPath.lastIndexOf("\\")); 
+        var filePath = folderPath.substr(0, folderPath.lastIndexOf("\\")) + '\\' + fileName + '\\';
+        // filePath = filePath + '\\'
+
+
+    } else {
+        var fileName = folderPath.substr(folderPath.lastIndexOf("/"), folderPath.length);
+        //var fileName = fileName.replace(/\//g, '')
+        var fileName = fileName.replace(/\//g, '')
+        //var folderPath = folderPath.substr(0, folderPath.lastIndexOf("/"));
+        var filePath = folderPath.substr(0, folderPath.lastIndexOf("/")) + '/' + fileName + '/';
+
+        $(xmlobj1).find('layers').each(function (e, element) {
+
+            var id = $(this).find('layers>id').text()
+            var index = $(this).find('layers>index').text()
+            var visible = $(this).find('layer>visible').text()
+            var name = tidyUpName($(this).find('layers>name').text(), id)
+            var text = $(this).find('text >textkey').text()
+            var type = $(this).find('layers>type').first().text()
+            var caps = $(this).find('layers>caps').text()
+            ///BOUNDS
+            var topboundsfx = $(this).find('boundswithfx top').first().text()
+
+            var bottomboundsfx = $(this).find('boundswithfx bottom').first().text()
+
+            var leftboundsfx = $(this).find('boundswithfx left').first().text()
+
+            //console.log(!!leftboundsfx)
+            var rightboundsfx = $(this).find('boundswithfx right').first().text()
+            widthfx = (Number(rightboundsfx) - Number(leftboundsfx))
+            heightfx = Number(bottomboundsfx) - Number(topboundsfx)
+            topboundsfx = 'top:' + topboundsfx
+            leftboundsfx = 'left:' + leftboundsfx
+
+
+
+            widthfx = 'width: ' + widthfx + 'px';
+            heightfx = 'height: ' + heightfx + 'px';
+
+            var top = $(this).find('bounds top').first().text()
+            var bottom = $(this).find('bounds bottom').first().text()
+            var left = $(this).find('bounds left').first().text()
+            var right = $(this).find('bounds right').first().text()
+            widthnofx = Number(right) - Number(left)
+            heightnofx = Number(bottom) - Number(top)
+            widthnofx = 'width: ' + widthnofx + 'px';
+            heightnofx = 'height: ' + heightnofx + 'px';
+            left = 'left: ' + left + 'px'
+            top = 'top: ' + top + 'px'
+
+            var letterspacing = Number($($(this).find('text tracking')[0]).text()) / 1000
+            //console.log(letterspacing)
+            type == 'shapeLayer' && $(this).find('pathcomponents origin type').text() == 'rect' ? $(this).wrapInner('<div>').children().attr('id', name) : '';
+            //type=='textLayer'?$(this).find('svg text').wrapInner('<span>').children().attr('id',name):'';
+            var opacity = $(this).find('blendoptions opacity value').text()
+            opacity == '' ? opacity = 1 : opacity = Number(opacity) / 100;
+
+            //FONT INFO
+
+            xtransform = Number($(this).find('text transform xx').first().text())
+                    type == 'textLayer' ? fontsize = 'font-size: ' + (parseInt($(this).find('svg text').attr('font-size')) * xtransform) + ';\n' : fontsize = '';
+            type == 'textLayer' ? fontfamily = 'font-family: ' + $(this).find('svg text').attr('font-family') + ';\n' : fontfamily = '';
+
+            type == 'textLayer' && $(this).find('svg text').attr('font-style') != undefined ? fontstyle = 'font-style: ' + $(this).find('svg text').attr('font-style') : fontstyle = '';
+
+            //color='color: '+'+$(this).find('svg text').attr('fill')
+            //left off here
+
+            try {
+                //console.log($(this).find('svg text')).fill)
+                color = (parseColor(getAttributes($(this).find('svg text')).fill))
+
+
+                color = 'color: ' + color.hex + '; '
+            } catch (e) {
+
+
+                try {
+                    if ($(this).find('pathComponents origin type').text() == 'rect') {
+                        color = (parseColor(getAttributes($(this).find('svg path')).fill))
+                        color = 'background-color: ' + color.hex + '; '
+                    } else {
+                        color = ''
+                    }
+                } catch (e) {
+                    color = ''
+                }
+
+            }
+                                //console.log($(this).find('layereffects enabled').text()=='true')
+                 try {
+                    if ($(this).find('layereffects enabled').text() == 'true') {
+                
+                red = parseInt($(this).find('layereffects solidfill color red').text())
+                
+                green = parseInt($(this).find('layereffects solidfill color green').text())
+                blue = parseInt($(this).find('layereffects solidfill color blue').text())
+              
+                hsl=(RGBtoHSV(red, green, blue))
+                console.log(hsl.s*100)
+              console.log(100+(31-(parseInt(hsl.s*100)))) 
+                filter = 'filter: contrast(0%) sepia(100%) hue-rotate('+((parseInt(hsl.h*360))-47)+'deg) brightness('+(100+((parseInt(hsl.v*100))-67))+'%) saturate('+(100+(31-(parseInt(hsl.s*100))))+'%);'
+                //hsl.s.length=='undefined'?filter='':filter=filter;
+      
+               
+           
+                        color = 'background-color: rgb('+red+', '+green+', '+blue+');\n'
+                     
+                        //color = 'background-color: ' + color.hex + '; '
+                    } else {
+                        filter=''
+                    }
+                } catch (e) {
+                    ''
+                }
+ console.log(filter)
+//console.log(color)
+            align = $(this).find('paragraphstyle align').first().text()
+
+
+            fontfamily.indexOf('undefined') > -1 ? textattr = '' : textattr = ';\n' + fontsize + ';\n' + fontfamily + ';\n' + color + '\n'
+
+            //console.log($(this).find('ok'))
+            type == 'layer' && $(this).find('layereffects solidfill').length==0 ? ($(this).wrapInner('<img>').children()) + ($(this).children('img').attr('id', name).attr('src', 'images/' + name + '.png')):'';
+                type == 'layer' && $(this).find('layereffects solidfill').length>0 ? ($(this).wrapInner('<div>').children()) + ($(this).children('div').attr('id', name).attr('style', '-webkit-mask-image: url(images/' + name + '.png')):'';
+            //type=='textLayer'?$(this).find('tspan').wrapInner('<span>').children().attr('id',name):'';
+
+
+
+
+
+
+
+
+
+            //LAYEREFFECTS
+            //SHADOW
+            var shadowx = $(this).find('svg filter feOffset').attr('dx') + 'px '
+            var shadowy = $(this).find('svg filter feOffset').attr('dy') + 'px '
+            shadowblur = $(this).find('layereffects dropshadow blur').text() + 'px '
+            shadowcolor = $(this).find('svg filter feFlood').attr('flood-color')
+            shadowspread = $(this).find('layereffects dropshadow chokematte').text() + 'px '
+
+            shadowcolor == undefined ? shadow = '' : shadow = 'box-shadow: ' + shadowx + shadowy + shadowblur + shadowspread + shadowcolor + ';';
+            //STROKE
+            strokewidth = $(this).find('[stroke-width]').attr('stroke-width')
+            strokecolor = $(this).find('[stroke]').attr('stroke')
+            shadowdist = $(this).find('feGaussianBlur').attr('stdDeviation') + 'px '
+            var strokeopacity = Number($(this).find('layereffects framefx opacity value').text()) / 100
+            stroke = $(this).find('[stroke-width]').attr('stroke-width')
+            stroke != undefined && type == 'textLayer' ? stroke = '-webkit-text-stroke: ' + strokewidth + ' ' + strokecolor.replace(')', ', ' + strokeopacity + ')').replace('rgb', 'rgba') + ';' : stroke != undefined && type != 'textLayer' ? stroke = 'border: solid ' + strokewidth + ' ' + strokecolor.replace(')', ', ' + strokeopacity + ')').replace('rgb', 'rgba') + ';' : stroke = '';
+
+            //strokecolor = strokecolor.replace(')',', '+strokeopacity+')').replace('rgb','rgba'); 
+
+            $(this).find('div').length > 0 && stroke != '' ? (left = leftboundsfx) + (top = topboundsfx) + (width = widthnofx) + (height = heightnofx) : '';
+            $(this).find('div').length > 0 && stroke == '' ? (left = left) + (top = top) + (width = widthnofx) + (height = heightnofx) : '';
+            console.log(name)
+            //console.log(topboundsfx)
+            bottomboundsfx == '' ? (left = left) + (top = top) + (width = widthnofx) + (height = heightnofx) : '';
+            bottomboundsfx != '' && $(this).find('div').length == 0 ? (left = leftboundsfx) + (top = topboundsfx) + (width = widthnofx) + (height = heightnofx) : '';
+            var textboundsleft = $(this).find('text bounds left').text()
+
+            var textboundsright = $(this).find('text bounds right').text()
+            //console.log(textboundsleft)
+            //console.log(textboundsright)
+            //var width=(Math.abs(textboundsright))+(Math.abs(textboundsleft))
+
+            type == 'textLayer' ? (width = $(this).find('svg').attr('width')) + (height = '') : ''; //width = 'width: ' + (((Math.abs(textboundsright)) + (Math.abs(textboundsleft))) + 5) + 'px' : '';
+            type == 'textLayer' ? letterspacing = 'letter-spacing: ' + letterspacing + 'em;\n' : ''
+
+
+            //$(this).parent('div').attr('id','name')
+            $(this).find('tspan').first().attr('dy', 0)
+            margintop = 0
+            $(this).find('tspan').each(function (e, element) {
+
+                if ($(element).parent().length == 0) {
+                    margintop = 0
+                    zIndex = ''
+                    y = 0
+                    zIndex = $($(this)[0].ownerSVGElement).css('z-index')
+                } else {
+                    //console.log($(this)[0])
+                    //$(this).parent().children('tspan').first().attr('dy',0)
+                    margintop += (parseFloat($(element).attr('dy')))
+                    zIndex = Number($(element).parents('svg').css('z-index')) + (x++)
+                }
+                //============================================
+
+                marginTop = 'margin-top: ' + (margintop) + 'px; '
+
+                type == 'textLayer' ? marginTop = ('margin-top: ' + (margintop) + 'em;') : marginTop = '';
+                //console.log(marginTop)
+
+                //textalign=('text-align: '+(align));
+
+                $(this).replaceWith('<span id="' + tidyUpName($(this).text(), id + '_' + (e)) + '" margintop="' + marginTop + '" color="' + color + '">' + $(this).text() + '</span>')
+                //span+='<span id="'+tidyUpName($(this).text(),e)+'" margintop="'+marginTop+'">'+$(this).text()+'</span>'
+                //console.log(color)
+                //$(this).parents('svg').replaceWith(span)
+                //console.log($(this).parent('svg').attr('id',tidyUpName($(this).text(),id)))
+                //css+=';\n'+marginTop+'\n'
+                //console.log($('#'+tidyUpName($(this).text(),id)))
+
+            })
+
+
+
+            $(this).find('pathComponents origin type').text() == 'rect' ? $(this).find('svg').remove() : '';
+            //$(this).find('svg').replaceWith($(this).find('svg').children().html())
+            //$(this).find('span').text(text)  
+            //console.log(width)
+            $(this).find('version, timeStamp,count,file,resolution,globalLight,profile,mode,depth,mask, id, type, index,  clipped,  visible, fill, strokeStyle, generatorSettings, path:not("svg path"), bounds, smartObject, pixels, boundsWithFX, layerEffects,  blendOptions,  clippedLayer, textProps, selection, name, protection, svgplaceholder, span>text, layers>text').remove()
+
+            $(this).children().attr('id', name)
+            //console.log($(this).html())
+            //console.log($(this).find('svg text').length>0 && $(this).find('svg text').children().length==0)
+            //$(this).find('svg text').length>0 && $(this).find('svg text').children().length==0?css+='#'+tidyUpName($(this).text(),id)+'{\n position:absolute; \n'+'z-index: '+index+';\n'+left+';\n'+top+';\n'+width+';\n'+height+';\n'+'opacity: '+opacity+';\n'+textattr+stroke+shadow+letterspacing+'}\n':css+='';
+            // type!='textLayer' && $(this).find('div').length==0?css+='#'+name+'{\n position:absolute; \n'+'z-index: '+index+';\n'+left+';\n'+top+';\n'+width+';\n'+height+';\n'+'opacity: '+opacity+';\n'+textattr+stroke+shadow+'}\n':css+='';
+            try {
+                type == 'textLayer' && $(this).find('svg text').length > 0 && $(this).find('svg text').children().length == 0 ? $(this).find('svg').replaceWith('<span id="' + tidyUpName($(this).text(), id) + '">' + $($(this).find('svg text')[0]).text() + '</span>') : '';
+            } catch (e) {
+                ''
+            }
+
+            //console.log($(this).find('div').length>0)
+            // $(this).find('div').length>0?css+='#'+name+'{\n position:absolute; \n'+'z-index: '+index+';\n'+left+';\n'+top+';\n'+width+';\n'+height+';\n'+'opacity: '+opacity+';\n'+textattr+stroke+shadow+color+'background-clip: content-box;}\n':css+='';         
+            //type=='shapeLayer' && 
+          
+
+            $(this).find('div, img, svg, span').each(function () {
+                //$(this).children('text').parents('svg').remove()
+                //$(this).is('svg')?console.log($(this).html()):'';
+                //console.log($(this).children().not("path").parents('svg'))
+                //console.log($($(this).children().not("path").parents('svg')).replaceWith($(this).siblings('span').prop('outerHTML')))
+                marginTop = $(this).attr('margintop') + '\n'
+                try {
+                    letterSpacing = Number(parseSentenceForNumber(letterspacing))
+                } catch (e) {
+                    letterspacing = 0
+                }
+                width = Number(parseSentenceForNumber(width))
+                //console.log(width)
+
+                addedwidth = width * letterSpacing
+                addedwidth = addedwidth + width
+                //console.log(addedwidth)
+                width = 'width: ' + (width) + 'px;'
+                    //console.log($(this).find('text').parents('svg').replaceWith($('span').html()))
+
+                    !$(this).attr('color') ? textcolor = '' : textcolor = $(this).attr('color');
+                //$(this).children('text').parents('svg').remove()
+                $(this).is('span') ? (shadow = shadow.replace('box-shadow', 'text-shadow').split(' ')) + (shadow = shadow[0] + ' ' + shadow[1] + ' ' + shadow[2] + ' ' + shadow[3] + ' ' + shadowcolor + ';\n') + (aligntext = 'text-align: ' + align + ';\n') : (aligntext = '') + (letterspacing = '');
+                $(this).is('div') ? (backgroundclip = 'background-clip: content-box;\n') + (aligntext = '') : backgroundclip = '';
+                css += '#' + $(this).attr('id') + '{\n position:absolute; \n' + 'z-index: ' + index + ';\n' + left + ';\n' + top + ';\n' + width + ';\n' + height + ';\n' + 'opacity: ' + opacity + ';\n' + fontstyle + fontfamily + '\n' + fontsize + '\n' + marginTop.replace('undefined', '') + stroke + aligntext + shadow.replace(/undefined/g, '') + letterspacing + color + backgroundclip + textcolor + '}\n'
+                css = css.replace('width: NaNpx;', '')
+            })
+
+            mainbody += $(this).html()
+
+
+        })
+
+    }
+
+
+    //css=css.replace(new RegExp('\n','g'), '')
+    docWidth = $($(xmlobj1).find('actiondescriptor bounds right')).first().text()
+    docHeight = $($(xmlobj1).find('actiondescriptor bounds bottom')).first().text()
+    //$('head').append('<style>'+css+'</style>')
+    //$('body').append(mainbody)
+
+    function parseSentenceForNumber(sentence) {
+        var matches = /\d+\.?\d{0,4}/.exec(sentence);
+        try {
+            if (matches.length) return matches[0];
+            return NaN; // No match
+        } catch (e) {
+            ''
+        }
+    }
+
+
+
+    finalHtmlResult = `<!DOCTYPE html>
+<html>
+
+  <head><meta charset="utf-8">
+  <title>undefined</title>
+  <meta name="generator" content="Google Web Designer 1.9.0.0619">
+  <meta name="template" content="Expandable 3.0.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="gwdpage_style.css" rel="stylesheet" data-version="8" data-exports-type="gwd-page">
+  <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-pagedeck">
+  <style type="text/css" id="gwd-lightbox-style">
+    .gwd-lightbox {
+      overflow: hidden;
+    }
+  </style>
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css" id="mainStyles">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    .gwd-page-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .gwd-page-content {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+      position: absolute;
+    }
+    .gwd-page-wrapper {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      transform: translateZ(0px);
+    }
+    .page1-content {
+      width: ` + docWidth + `px;
+      height: ` + docHeight + `px;
+    }\n` + css + `
+  </style>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"/>
+  <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"/>
+  <script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"/>
+  <script data-source="gwdpage_min.js" data-version="8" data-exports-type="gwd-page" src="gwdpage_min.js"/>
+  <script data-source="gwdpagedeck_min.js" data-version="9" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"/>
+<script integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" src="https://code.jquery.com/jquery-2.2.4.min.js"/>
+</head>
+<body onbeforeunload="return window.location.reload(true)" class="document-body">
+  <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
+    <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox" data-gwd-width="550px" data-gwd-height="400px">
+      <div class="gwd-page-content page1-content">` + mainbody + `</div>
+    </div>
+  </div>
+  <script type="text/javascript" id="gwd-init-code">
+    (function() {
+      document.body.style.opacity = "1";
+      var pageDeck = document.getElementById('pagedeck');
+      /**
+       * Handles the DOMContentLoaded event. The DOMContentLoaded event is
+       * fired when the document has been completely loaded and parsed.
+       */
+      function handleDomContentLoaded(event) {}
+      /**
+       * Handles the WebComponentsReady event. This event is fired when all
+       * custom elements have been registered and upgraded.
+       */
+      function handleWebComponentsReady(event) {
+        document.body.style.opacity = "";
+        setTimeout(function() {
+          pageDeck.goToPage(pageDeck.getDefaultPage().id);
+        }, 0);
+      }
+      window.addEventListener('DOMContentLoaded',
+        handleDomContentLoaded, false);
+      window.addEventListener('WebComponentsReady',
+        handleWebComponentsReady, false);
+    })()</` + `script` + `>` +
+        `<script integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" src="https://code.jquery.com/jquery-2.2.4.min.js"/>
+      <script src="https://cdn.rawgit.com/patik/within-viewport/84d79ef7/withinviewport.js"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"/>
+  <script src="https://cdn.rawgit.com/ssorallen/jquery-scrollstop/master/jquery.scrollstop.min.js"/>` +
+        `</body>
+</html>`
+
+    $('body').append('<textarea style="opacity:1" id="dataResult">' + finalHtmlResult + '</textarea>')
+    $('body').addClass('btn').attr('data-clipboard-action', 'copy').attr('data-clipboard-target', '#dataResult').append($('textarea').text());
+    $('textarea').css({
+        'opacity': '0',
+        'height': '0px'
+    })
+
+    //remove svg that contain text leave only span tags
+    $('svg').find('text').parents('svg').remove()
+    $('span').removeAttr('xmlns')
+
+    //console.log(finalHtmlResult)
+
+
+
+    $.fn.myUnwrap = function () {
+        this.parent(':not(body)').each(function () {
+            $(this).replaceWith(this.childNodes);
+        });
+        return this;
+    };
+    alignText = ''
+    $('text').each(function (e, element) {
+        text = $(element).text()
+        fontFamily = 'font-family: ' + window.getComputedStyle(element, null).getPropertyValue('font-family') + ';'
+        fontWeight = 'font-weight: ' + window.getComputedStyle(element, null).getPropertyValue('font-weight') + ';'
+        //color='color: '+window.getComputedStyle(element, null).getPropertyValue('fill')+';'
+        try {
+            color = (parseColor(getAttributes($(element)).fill))
+
+            color = 'color: ' + color.hex + '; '
+        } catch (e) {
+            color = ''
+        }
+        zindex = 'z-index: ' + $($(this)[0].ownerSVGElement).css('z-index') + ';'
+        opacity = $($(this)[0].ownerSVGElement).attr('opacity')
+        fontSize = 'font-size: ' + window.getComputedStyle(element, null).getPropertyValue('font-size') + ';'
+        position = 'position:absolute; '
+        elemleft = 'left: ' + element.getBoundingClientRect().left + 'px;'
+        elemtop = 'top: ' + (element.getBoundingClientRect().top + window.scrollY) + 'px; '
+        elemWidth = 'width: ' + (element.getBoundingClientRect().right - element.getBoundingClientRect().left + 5) + 'px; '
+        elemHeight = 'height: ' + 'auto;'
+        try {
+            textAlign = $(element).attr('text-anchor')
+        } catch (e) {
+            alignText = '';
+            textAlign = ''
+        }
+        if (textAlign == 'middle') {
+            alignText = 'text-align:center;'
+        } else if (textAlign == 'start') {
+            alignText = 'text-align:left;'
+        } else if (textAlign == 'end') {
+            alignText = 'text-align:right;'
+        } else if (textAlign == '') {
+            alignText = ''
+        }
+        zIndex = Number($(element).parent('svg').css('z-index'))
+        zIndex = 'z-index:' + zIndex + '; '
+        stroke = $(element).parent('svg').attr('stroke')
+        //console.log($($(this)[0].ownerSVGElement))
+        shadow = $($(this)[0].ownerSVGElement).attr('shadow')
+        //console.log(tidyUpName(text.substring(0,10),e))
+
+        // $(element).parents('svg').replaceWith('<span id="'+tidyUpName(text.substring(0,10),e)+ '_">'+text+'</span>')
+        //$(element).find('tspan').parents('svg').replaceWith('<span id="'+tidyUpName(text.substring(0,10),e)+ '_">'+text+'</span>')
+        //embedStyles2+=('#'+tidyUpName(text.substring(0,10),e)+ '_ {\n'+position+'\n'+zIndex+elemWidth+'\n'+elemHeight+'\n'+elemleft+'\n'+elemtop+alignText+'\n'+fontFamily+'\n'+'\n'+fontSize+'\n'+fontWeight+'\n'+color+'\n'+opacity+stroke+shadow+zindex+'\n'+'}\n').replace(/undefined/g,'')
+        //console.log($($(this)[0].ownerSVGElement).attr('opacity'))
+        //console.log($(element).parent('svg'))
+
+    })
+    if ($('text').children().length < 1) {
+        //console.log($(text)[0])
+    }
+
+    $('tspan').each(function (e, element) {
+        text = $(element).text()
+        fontFamily = 'font-family: ' + window.getComputedStyle(element, null).getPropertyValue('font-family') + ';'
+        color = 'color: ' + window.getComputedStyle(element, null).getPropertyValue('fill') + ';'
+        fontSize = 'font-size: ' + window.getComputedStyle(element, null).getPropertyValue('font-size') + ';'
+        position = 'position:absolute; '
+        elemleft = 'left: ' + element.getBoundingClientRect().left + 'px;'
+        //LEFT OFF HERE TRYING TO GET FIRST CHILD TOP
+        try {
+            elemtop = 'top :' + ($($('tspan:first-child').get(0))[0].getBoundingClientRect().top + window.scrollY) + 'px; ' // (element.getBoundingClientRect().top)+'px;'
+        } catch (e) {
+            elemtop = ''
+        }
+        //elemtop='top :'+(element.getBoundingClientRect().top+window.scrollY)+'px;'
+        elemWidth = 'width: ' + (element.getBoundingClientRect().right - element.getBoundingClientRect().left + 5) + 'px; '
+        elemHeight = 'height: ' + 'auto; ' //(element.getBoundingClientRect().bottom-element.getBoundingClientRect().top)+'px; '
+        textAlign = $(element).attr('text-anchor')
+        if (textAlign == 'middle') {
+            alignText = 'text-align:center;'
+        } else if (textAlign == 'start') {
+            alignText = 'text-align:left;'
+        } else if (textAlign == 'end') {
+            alignText = 'text-align:right;'
+        }
+
+        //console.log(window.getComputedStyle(element, null))
+        //GET MARGIN TOP
+        if ($(element).parent().children('span').length == 0) {
+            marginTop = 0
+            zIndex = ''
+            x = 0
+            zIndex = $($(this)[0].ownerSVGElement).css('z-index')
+        } else {
+            console.log(x++)
+            marginTop += parseFloat($(element).attr('dy'))
+            zIndex = Number($(element).parents('svg').css('z-index')) + (x++)
+        }
+        //============================================
+        console.log(x)
+        marginTop = marginTop
+        try {
+            if ($(element).attr('dy').indexOf('px') > -1) {
+                em = parseFloat($(element).attr('dy'))
+                //topElement=$($('tspan:first-child').get(0))[0].getBoundingClientRect().top
+                //console.log(x++)
+            }
+        } catch (e) {
+            ''
+        }
+        //marginTop = 'margin-top: '+marginTop+'px;'
+
+        try {
+            if ($(element).attr('dy').indexOf('px') < 0) {
+                em = parseFloat($(element).attr('dy'))
+
+            }
+        } catch (e) {
+            ''
+        }
+
+        elemtop = 'top :' + $(element).parents('svg').css('top') + '; '
+        //console.log(elemtop)
+
+
+        zIndex = 'z-index: ' + zIndex + '; '
+        //$(element).parents('text').replaceWith('<this></this>')
+
+        if ($($('tspan')[e]).prev()[0] == undefined) {
+
+        }
+        //$('#my_span').myUnwrap();
+
+        color = (parseColor(getAttributes($(element).parent()).fill))
+        textCSS = JSON.stringify(getAttributes($(element).parent())) + '; color: ' + color.hex + '; ' + 'opacity: ' + color.opacity + '; '
+        textCSS = textCSS.replace(/{/g, '').replace(/}/g, '').replace(/,/g, ';').replace(/"/g, '').replace(/fill/g, 'font-color').replace(/kerning/g, 'letter-spacing')
+        //console.log(textCSS)
+        //$(element).replaceWith('<span id="'+e+ '" style="'+position+zIndex+elemWidth+elemHeight+elemleft+elemtop+alignText+'margin-top: '+marginTop+'em;'+ '">'+text+'</span>')
+        //$(element).replaceWith('<span id="'+tidyUpName(text.substring(0,10),e)+ '_">'+text+'</span>')
+        //console.log($($('span')[e]).attr('style',$($('span')[e]).attr('style')+textCSS).css('font-color',''))
+        //embedStyles2+='#'+tidyUpName(text.substring(0,10),e)+ '_ {\n'+position+'\n'+zIndex+elemWidth+'\n'+elemHeight+'\n'+elemleft+'\n'+elemtop+alignText+'\n'+'margin-top: '+'\n'+marginTop+'em;'+'\n'+textCSS+'}\n'
+
+
+
+    })
+    $('#mainStyles').html($('#mainStyles').html() + embedStyles2)
+    //console.log(embedStyles)
+    //console.log($('span')) 
+    $('text').each(function (e, element) {
+        //console.log(JSON.stringify(getAttributes ( $(element) )))
+        if ($(element).children().length > 0) {
+            //$(this).parents('svg').replaceWith($(this).html())
+            //console.log($(this).html())
+        }
+
+    })
+    html = $('body').html()
+    // console.log(html)
+    //$('body').append('<textarea style="opacity:1" id="dataResult">'+html+'</textarea>')
+    //$('body').addClass('btn').attr('data-clipboard-action','copy').attr('data-clipboard-target','#dataResult').append($('textarea').text());
+
+    $(document).ready(function () {
+        //console.log($('textarea').text())  
+
+        setTimeout(function () {
+            $('.btn')[0].click();
+        }, 1000);
+    });
+
+    var clipboard = new Clipboard('.btn');
+    console.log(clipboard)
+    clipboard.on('success', function (e) {
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function (e) {
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+    });
+
+    //$('svg').parent().replaceWith(svgContent)
+
+
+    function mergeSpan() {
+        beginning = ($('img').parent().next('div').children('span').add($('[data-group]').children().children('span').first()))
+        ending = $('img').parent().prev('div').children('span')
+        //check if beginning has group before text
+        $(beginning).each(function (e, element) {
+            //console.log($($('img').parent().prev('div').children('span')[e]).parent())
+            //var $nextGroup = $(this).nextUntil($($(ending)[e]));
+            //$nextGroup.add($nextGroup.next())//.wrapAll('<div class="draggableStuff">');
+            //console.log($(this).parent())
+            //console.log($($(ending)[e]).parent())
+            $(this).parent().add($(this).parent().nextUntil($($(ending)[e]).parent().next())).wrapAll('<div id=text' + e + '></div>')
+            //console.log($($(ending)[e]).parent())
+        });
+
+        return $('div[id*="text"]')
+    }
+
+    function tidyUpName(layerName, id) {
+        var layerName1 = "_" + id + "_" + layerName.replace(/[\u201c\u201d";!.?,'`\u00a9@\u2019#':$%^_&)(+=|}{><\x2F\s-]/g, "");
+        if (1 == /[^\u0000-\u00ff]/.test(layerName1) || 1 == /[^\w\s]/gi.test(layerName1)) layerName1 = layerName1.replace(/[^\w\s]/g, "");
+        return layerName1
+    }
+
+    function escapeXml(unsafe) {
+        return unsafe.replace(/[<>&'"]/g, function (c) {
+            switch (c) {
+                case '<':
+                    return '&lt;';
+                case '>':
+                    return '&gt;';
+                case '&':
+                    return '&amp;';
+                case '\'':
+                    return '&apos;';
+                case '"':
+                    return '&quot;';
+            }
+        });
+    }
+
+    function unEscapeXml(unsafe) {
+        return unsafe.replace(/[<>&'"]/g, function (c) {
+            switch (c) {
+                case '&lt;':
+                    return '<';
+                case '&gt;':
+                    return '>';
+                case '&amp;':
+                    return '&';
+                case '&apos;':
+                    return '\'';
+                case '&quot;':
+                    return '"';
+            }
+        });
+    }
+
+    $.fn.textEquals = function (text) {
+        var match = false;
+        var values = "";
+        $(this).each(function () {
+            if ($(this).text().match("^" + text + "$")) {
+                values = $(this).val();
+                match = true;
+                return false;
+            }
+        });
+        return values;
+    };
+
+    function getAttributes($node) {
+        var attrs = {};
+        $.each($node[0].attributes, function (index, attribute) {
+
+            if (attribute.name != 'x' && attribute.name != 'y' && attribute.name != 'font-color') {
+                attrs[attribute.name] = attribute.value;
+            }
+        });
+
+        return attrs;
+    }
+
+    function parseColor(color) {
+        var arr = [];
+        color.replace(/[\d+\.]+/g, function (v) {
+            arr.push(parseFloat(v));
+        });
+        return {
+            hex: "#" + arr.slice(0, 3).map(toHex).join(""),
+            opacity: arr.length == 4 ? arr[3] : 1
+        };
+    }
+
+    function toHex(int) {
+        var hex = int.toString(16);
+        return hex.length == 1 ? "0" + hex : hex;
+    }
+
+
+function RGBtoHSV(r, g, b) {
+    if (arguments.length === 1) {
+        g = r.g, b = r.b, r = r.r;
+    }
+    var max = Math.max(r, g, b), min = Math.min(r, g, b),
+        d = max - min,
+        h,
+        s = (max === 0 ? 0 : d / max),
+        v = max / 255;
+
+    switch (max) {
+        case min: h = 0; break;
+        case r: h = (g - b) + d * (g < b ? 6: 0); h /= 6 * d; break;
+        case g: h = (b - r) + d * 2; h /= 6 * d; break;
+        case b: h = (r - g) + d * 4; h /= 6 * d; break;
+    }
+
+    return {
+        h: h,
+        s: s,
+        v: v
+    };
+}
+}$(document).ready(function(){xml2html(xmlObj)})</script></head></html>
